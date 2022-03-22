@@ -20,7 +20,7 @@ const Quiz = () => {
     const handleNext = () =>{
         setQueNum(queNum  + 1)
     }
-    
+
     useEffect(()=>{ // if somehow the student name is losed, redirect ot student form page
         if(!cStudent.name){
             natigate('/')
@@ -29,12 +29,12 @@ const Quiz = () => {
 
     return (
         <div>
-            <p>Student Name: {cStudent.name}, Student ID: {cStudent.id}</p>
-            <p>Preferred Language: {cStudent.language}, Student Gender: {cStudent.gender}</p>
+            {/* <p>Student Name: {cStudent.name}, Student ID: {cStudent.id}</p>
+            <p>Preferred Language: {cStudent.language}, Student Gender: {cStudent.gender}</p> */}
             {
                 (queNum === 0 && <QuestionOne currentStudent = {cStudent} />) || (queNum === 1 && <QuestionTwo currentStudent = {cStudent} /> ) || (queNum === 2 && <QuestionThree currentStudent = {cStudent} /> ) || (queNum === 3 && <QuestionFour currentStudent = {cStudent} /> ) || (queNum === 4 && <QuestionFive currentStudent = {cStudent} /> ) || (queNum === 5 && <Result currentStudent = {cStudent} />) || (queNum >= 6 && <p>Thank You</p>)
             }
-            { queNum >= 6 || <Button onClick={handleNext}>Next &gt;&gt;</Button> }
+            { queNum >= 6 || <Button variant="outlined" onClick={handleNext}>Next &gt;&gt;</Button> }
         </div>
     );
 };

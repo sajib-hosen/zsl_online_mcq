@@ -20,7 +20,7 @@ const QuestionThree = (props: studentProps) => {
         <Box sx={{ display: 'flex', justifyContent: 'center', p: 1, m: 1, bgcolor: 'background.paper', borderRadius: 1, }}>
             <Card sx={{ maxWidth: 445 }}>
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">{language === "বাংলা" ? "বাংলা 3" : "English 3"}</Typography>
+                <Typography gutterBottom variant="h5" component="div">Question</Typography>
                     <FormControl>
                         <FormLabel id="demo-row-radio-buttons-group-label">{language === "বাংলা" ? "React js এ দুটি উপায়ে ডেটা পরিচালনা করা হয় কি?" : "What are two ways to gets handled in React js?"}</FormLabel>
                             <RadioGroup onChange={(e)=>{getResult(e)}} row aria-labelledby="demo-row-radio-buttons-group-label" name="row-radio-buttons-group" >

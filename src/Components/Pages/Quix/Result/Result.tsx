@@ -3,7 +3,7 @@ import { studentTypes } from '../../../Types/onlineMcqTypes';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../appStore/store';
 import { Cell, Pie, PieChart } from 'recharts';
-import { Card, CardContent } from '@mui/material';
+import { Card, CardContent, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 type studentProps = {
     currentStudent: studentTypes,
@@ -53,6 +53,8 @@ const Result = (props: studentProps) => {
         <div style={{ width: '100%',}} >
         <Box sx={{ display: 'flex', justifyContent: 'center', p: 1, m: 1, bgcolor: 'background.paper', borderRadius: 1, }}>
             <Card sx={{ maxWidth: 445 }}>
+                <Typography>Currect Answer: {piChartData[0]?.value}</Typography>
+                <Typography>Incurrect Answer: {piChartData[1]?.value}</Typography>
                 <CardContent>
                     <PieChart width={400} height={300}>
                         <Pie labelLine={false} label={renderCustomizedLabel} data={piChartData} dataKey="value" cx={200} cy={200} outerRadius={80} fill="#8884d8" />

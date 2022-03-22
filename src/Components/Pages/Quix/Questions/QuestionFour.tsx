@@ -20,7 +20,7 @@ const QuestionFour = (props: studentProps) => {
         <Box sx={{ display: 'flex', justifyContent: 'center', p: 1, m: 1, bgcolor: 'background.paper', borderRadius: 1, }}>
             <Card sx={{ maxWidth: 445 }}>
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">{language === "বাংলা" ? "বাংলা 4" : "English 4"}</Typography>
+                <Typography gutterBottom variant="h5" component="div">Question</Typography>
                     <FormControl>
                         <FormLabel id="demo-row-radio-buttons-group-label">{language === "বাংলা" ? "React js কার্যক্ষমতা বাড়াতে ভার্চুয়াল DOM ব্যবহার করে।" : "React js use vertual DOM to increase performance."}</FormLabel>
                             <RadioGroup onChange={(e)=>{getResult(e)}} row aria-labelledby="demo-row-radio-buttons-group-label" name="row-radio-buttons-group" >

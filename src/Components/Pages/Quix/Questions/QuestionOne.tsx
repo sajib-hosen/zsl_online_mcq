@@ -21,7 +21,7 @@ const QuestionOne = (props: studentProps) => {
             <Box  sx={{ display: 'flex', justifyContent: 'center', p: 1, m: 1, bgcolor: 'background.paper', borderRadius: 1, }}>
                 <Card sx={{ maxWidth: 445 }}>
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">{language === "বাংলা" ? "বাংলা" : "English"}</Typography>
+                        <Typography gutterBottom variant="h5" component="div">Question</Typography>
                         <FormControl>
                             <FormLabel id="demo-row-radio-buttons-group-label">{language === "বাংলা" ? "ওয়েবপ্যাক ডেভ সার্ভারের জন্য ডিফল্ট পোর্ট কি?" : "What is the default port for webpack dev server?"}</FormLabel>
                                 <RadioGroup onChange={(e)=>{getResult(e)}} row aria-labelledby="demo-row-radio-buttons-group-label" name="row-radio-buttons-group" >

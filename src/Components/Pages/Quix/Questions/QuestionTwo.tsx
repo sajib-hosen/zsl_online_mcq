@@ -21,7 +21,7 @@ const QuestionTwo = (props: studentProps) => {
         <Box  sx={{ display: 'flex', justifyContent: 'center', p: 1, m: 1, bgcolor: 'background.paper', borderRadius: 1, }}>
             <Card sx={{ maxWidth: 445 }}>
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">{language === "বাংলা" ? "বাংলা 2" : "English 2"}</Typography>
+                <Typography gutterBottom variant="h5" component="div">Question</Typography>
                     <FormControl>
                         <FormLabel id="demo-row-radio-buttons-group-label">{language === "বাংলা" ? "React js লাইফ সাইকেলে কয়টি ধাপ রয়েছে" : "How many stages are there in React js life cycle"}</FormLabel>
                             <RadioGroup onChange={(e)=>{getResult(e)}} row aria-labelledby="demo-row-radio-buttons-group-label" name="row-radio-buttons-group" >
